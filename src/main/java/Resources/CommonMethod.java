@@ -18,7 +18,7 @@ public class CommonMethod {
 		     
 		     String ac=actual;
 		     String exp=expected;
-		     a.assertEquals(ac, exp,massege);
+		     a.assertEquals(ac,exp,massege);
 		     a.assertAll();
 	}
 }

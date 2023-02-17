@@ -1,10 +1,8 @@
 package TestCases;
 
 import java.io.IOException;
-
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-
 import PageObjectModel.LoginPageObject;
 import PageObjectModel.SignUpPageObject;
 import Resources.CommonMethod;

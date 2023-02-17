@@ -12,6 +12,5 @@ public class Constants {
 	public static String email="raj123@gmail.com";
 	public static String company="Tata";
 	public static String phone="9876543216";
-	public static void errormassege="";
-
-}
+	
+  }

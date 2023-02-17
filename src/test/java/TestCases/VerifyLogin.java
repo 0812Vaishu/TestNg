@@ -1,11 +1,9 @@
 package TestCases;
 
 import java.io.IOException;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import PageObjectModel.LoginPageObject;
 import Resources.CommonMethod;
 import Resources.Constants;
@@ -19,12 +17,13 @@ public class VerifyLogin extends baseClass {
 
 		LoginPageObject obj = new LoginPageObject(driver);
 		
-		CommonMethod.handlAssertions(driver.getCurrentUrl(),"https://login.salesforc.com/","url is not matching");
+   CommonMethod.handlAssertions(driver.getCurrentUrl(),"https://login.salesforce.com/","url is not matching");
+   
 		obj.enterUsernsme().sendKeys(username);
 		obj.enterPassword().sendKeys(password);
 		obj.ClickOnLogin().click();
 
-   CommonMethod.selectAssertions(obj.errorText().getText(),Constants.expectedErrorMassege,"Error messege is not matching");
+   CommonMethod.handlAssertions(obj.errorText().getText(),"please check your password.If you still can't log in,contact your salesforce administrator.","Error messege is not matching");
 
 	}
 
